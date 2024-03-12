@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rowLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/id_txt"
+        android:layout_width="45dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="16dp"
+        android:text="1"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.578" />
+
+    <TextView
+        android:id="@+id/lname_rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="39dp"
+        android:text="lname"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/city_rc"
+        app:layout_constraintStart_toEndOf="@+id/fname_rc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <TextView
+        android:id="@+id/email_rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="71dp"
+        android:layout_marginBottom="27dp"
+        android:text="email"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/state_rc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/phone_rc"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/fname_rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="39dp"
+        android:text="fname"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/city_rc"
+        app:layout_constraintStart_toEndOf="@+id/id_txt"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
+
+    <TextView
+        android:id="@+id/phone_rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="39dp"
+        android:text="phone"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/state_rc"
+        app:layout_constraintStart_toEndOf="@+id/lname_rc"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <TextView
+        android:id="@+id/city_rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:text="city"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/id_txt" />
+
+    <TextView
+        android:id="@+id/state_rc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="state"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/city_rc" />
+</androidx.constraintlayout.widget.ConstraintLayout>

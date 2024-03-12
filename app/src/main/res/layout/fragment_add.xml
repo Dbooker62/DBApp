@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragements.add.AddFragment">
+
+
+    <EditText
+        android:id="@+id/fname"
+        android:layout_width="277dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="100dp"
+        android:autofillHints="None"
+        android:ems="10"
+        android:hint="@string/firstname"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/lname"
+        android:layout_width="284dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="56dp"
+        android:autofillHints="None"
+        android:ems="10"
+        android:hint="@string/lastname"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fname" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="287dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="48dp"
+        android:autofillHints="None"
+        android:ems="10"
+        android:hint="@string/email"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lname" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="285dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="36dp"
+        android:autofillHints="None"
+        android:ems="10"
+        android:hint="@string/phone"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="@string/add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/state" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="277dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="city"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phone" />
+
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="273dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="state"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+</androidx.constraintlayout.widget.ConstraintLayout>
